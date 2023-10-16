@@ -17,10 +17,13 @@
             <div class="header__navbar">
                 <div class="logo">
                     <img src="./images/icons/iconLogo.svg" alt="logo"/>
-                    <button class="btn-language">
-                        <img src="./images/icons/iconLanguage.svg" alt="language" class="btn-language__img1"/>
-                        <img src="./images/icons/iconDown-arrow.svg" alt="notification" class="btn-language__img2"/>
-                    </button>
+                    <select class="select-language__mobile">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select>
                 </div>
                 <ul class="header__navbar-list">
                     <li><a href="#">Home</a></li>
@@ -29,10 +32,15 @@
                     <li><a href="#">Top</a></li>
                 </ul>
                 <div class="header__navbar-action">
-                    <button class="btn-language">
-                        <img src="./images/icons/iconLanguage.svg" alt="language" class="btn-language__img1"/>
-                        <img src="./images/icons/iconDown-arrow.svg" alt="notification" class="btn-language__img2"/>
-                    </button>
+
+                    <select class="select-language">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select>
+
                     <div class="header__navbar-search">
                         <button class="btn_icon btn-search">
                             <img src="./images/icons/iconSearch.svg" alt="search"/>
@@ -302,109 +310,66 @@
                 <div class="continue-watching__slider">
                     <div class="swiper tranding-slider__video">
                         <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
                             <div class="swiper-slide tranding-slide__continue">
                                 <div class="tranding-slide__continue-content">
                                     <div class="tranding-slide__continue-title">
                                         <span>Soul 2020</span>
                                     </div>
-                                    <div class="tranding-slide__continue-action">
-                                        <button class="btn-skipLeft">
-                                            <img src="./images/icons/iconLeftSkip.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-play">
-                                            <img src="./images/icons/iconPlay.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-skipRight">
-                                            <img src="./images/icons/iconRightSkip.svg" alt=""/>
-                                        </button>
-                                    </div>
-                                    <div class="tranding-slide__continue-line">
-                                        <img src="./images/continue-watching/line-video.svg"/>
-                                    </div>
                                 </div>
                                 <div class="tranding-slide-img">
-                                    <img src="images/continue-watching/continue1.svg" alt="Tranding">
+                                    <video controls>
+                                        <source src="videos/soul.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
                             <div class="swiper-slide tranding-slide__continue">
                                 <div class="tranding-slide__continue-content">
                                     <div class="tranding-slide__continue-title">
-                                        <span>The wolf of wall street 2013</span>
-                                    </div>
-                                    <div class="tranding-slide__continue-action">
-                                        <button class="btn-skipLeft">
-                                            <img src="./images/icons/iconLeftSkip.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-play">
-                                            <img src="./images/icons/iconPlay.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-skipRight">
-                                            <img src="./images/icons/iconRightSkip.svg" alt=""/>
-                                        </button>
-                                    </div>
-                                    <div class="tranding-slide__continue-line">
-                                        <img src="./images/continue-watching/line-video.svg"/>
+                                        <span>The Wolf of wall street 2013</span>
                                     </div>
                                 </div>
                                 <div class="tranding-slide-img">
-                                    <img src="images/continue-watching/continue2.svg" alt="Tranding">
+                                    <video controls>
+                                        <source src="videos/the_wolf_of_wall_street.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
                             <div class="swiper-slide tranding-slide__continue">
                                 <div class="tranding-slide__continue-content">
                                     <div class="tranding-slide__continue-title">
-                                        <span>Elite 2018, season 2</span>
-                                    </div>
-                                    <div class="tranding-slide__continue-action">
-                                        <button class="btn-skipLeft">
-                                            <img src="./images/icons/iconLeftSkip.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-play">
-                                            <img src="./images/icons/iconPlay.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-skipRight">
-                                            <img src="./images/icons/iconRightSkip.svg" alt=""/>
-                                        </button>
-                                    </div>
-                                    <div class="tranding-slide__continue-line">
-                                        <img src="./images/continue-watching/line-video.svg"/>
+                                        <span>Elite 2018,season 2</span>
                                     </div>
                                 </div>
                                 <div class="tranding-slide-img">
-                                    <img src="images/continue-watching/continue3.svg" alt="Tranding">
+                                    <video controls>
+                                        <source src="videos/elite.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
                             <div class="swiper-slide tranding-slide__continue">
                                 <div class="tranding-slide__continue-content">
                                     <div class="tranding-slide__continue-title">
                                         <span>Euphoria 2019</span>
                                     </div>
-                                    <div class="tranding-slide__continue-action">
-                                        <button class="btn-skipLeft">
-                                            <img src="./images/icons/iconLeftSkip.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-play">
-                                            <img src="./images/icons/iconPlay.svg" alt=""/>
-                                        </button>
-                                        <button class="btn-skipRight">
-                                            <img src="./images/icons/iconRightSkip.svg" alt=""/>
-                                        </button>
-                                    </div>
-                                    <div class="tranding-slide__continue-line">
-                                        <img src="./images/continue-watching/line-video.svg"/>
-                                    </div>
+<!--                                    <div class="tranding-slide__continue-action">-->
+<!--                                        <button class="btn-skipLeft">-->
+<!--                                            <img src="./images/icons/iconLeftSkip.svg" alt=""/>-->
+<!--                                        </button>-->
+<!--                                        <button class="btn-play">-->
+<!--                                            <img src="./images/icons/iconPlay.svg" alt=""/>-->
+<!--                                        </button>-->
+<!--                                        <button class="btn-skipRight">-->
+<!--                                            <img src="./images/icons/iconRightSkip.svg" alt=""/>-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                    <div class="tranding-slide__continue-line">-->
+<!--                                        <img src="./images/continue-watching/line-video.svg"/>-->
+<!--                                    </div>-->
                                 </div>
                                 <div class="tranding-slide-img">
-                                    <img src="images/continue-watching/continue4.svg" alt="Tranding">
+                                    <video controls>
+                                        <source src="videos/euphoria.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
 
@@ -657,10 +622,18 @@
         </div>
         <footer class="footer">
             <div class="social">
-                <img src="images/icons/iconInstagram.svg" alt=""/>
-                <img src="images/icons/iconTwitter.svg" alt=""/>
-                <img src="images/icons/iconFacebook.svg" alt=""/>
-                <img src="images/icons/iconSend.svg" alt=""/>
+                <a href="#">
+                    <img src="images/icons/iconInstagram.svg" alt=""/>
+                </a>
+                <a href="#">
+                    <img src="images/icons/iconTwitter.svg" alt=""/>
+                </a>
+                <a href="#">
+                    <img src="images/icons/iconFacebook.svg" alt=""/>
+                </a>
+                <a href="#">
+                    <img src="images/icons/iconSend.svg" alt=""/>
+                </a>
             </div>
             <ul class="footer__list-link">
                 <li>
@@ -705,10 +678,13 @@
                 </button>
             </div>
             <div class="footer__nation">
-                <button class="btn-language">
-                    <img src="./images/icons/iconLanguage.svg" alt="language" class="btn-language__img1"/>
-                    <img src="./images/icons/iconDown-arrow.svg" alt="notification" class="btn-language__img2"/>
-                </button>
+                <select class="select-language">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                </select>
                 <div class="footer__nation-address">
                     <img src="./images/icons/iconLogo.svg" alt=""/>
                     <span>Los-Angeles</span>
