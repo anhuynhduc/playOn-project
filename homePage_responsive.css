@@ -1,0 +1,570 @@
+/*Mobile*/
+@media (max-width: 767px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .header__navbar-action .btn-language{
+        display: none;
+    }
+    .header__navbar-list {
+       display: none;
+    }
+    .logo .btn-language{
+        display: flex;
+        height: 35px;
+    }
+
+    .logo .btn-language img{
+       margin-top: 0;
+    }
+
+    .navbar-search__slider {
+        margin-top: 30px;
+    }
+
+    .header__navbar-list li a {
+        font-size: 15px;
+    }
+
+    .header__navbar-action {
+        gap: 20px;
+        margin-left: 20%;
+    }
+
+    .btn-language {
+        height: 25px;
+        width: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        border-radius: 5px;
+    }
+
+    .btn-language__img1 {
+        height: 15px;
+    }
+
+    .btn_icon img {
+        height: 15px;
+    }
+
+    .btn-profile img {
+        height: 20px;
+    }
+    .btn-list{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 125px;
+    }
+
+    .header__navbar-action {
+        margin-top: -20px;
+        gap: 5px;
+    }
+
+    .header__navbar-manager {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: 7px;
+        margin-top: -25px;
+        position: relative;
+    }
+
+    .btn-pay {
+        height: 25px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .btn-link {
+        height: 46px;
+        width: 65px;
+        gap: 3px;
+    }
+
+    .tranding-slide__header {
+        width: 180px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .tranding-slide__header .tranding-slide-img img {
+        width: 200px;
+        height: 310px;
+    }
+
+    .tranding-slide__weekly-top {
+        width: 100px;
+        height: 150px;
+        margin: 15px;
+    }
+
+    .weekly-top__count {
+        font-size: 70px;
+        top: 50px;
+        left: 40px;
+    }
+
+    .tranding-slide__weekly-top .tranding-slide-img img {
+        width: 100px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .tranding-slider-control__header .swiper-button-prev {
+        margin-left: 15px;
+    }
+
+    .tranding-slider-control__header .swiper-button-next {
+        margin-right: 15px;
+    }
+
+    .continue-watching__title span,
+    .list-movie__title span,
+    .list-series__title span,
+    .list-cartoon__title span,
+    .weekly-top__title span {
+        font-size: 22px;
+    }
+
+    .tranding-slide__movie {
+        width: 100px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .tranding-slide__movie .tranding-slide-img img {
+        width: 100px;
+        height: 150px;
+        border-radius: 1rem;
+    }
+    .list-action__mobile{
+        display: block;
+    }
+
+    .list-action {
+        display: none;
+    }
+
+    .continue-watching {
+        margin-top: 30px;
+    }
+
+    .tranding-slide__continue {
+        width: 300px;
+        height: 185px;
+        border-radius: 20px;
+    }
+
+    .tranding-slide__continue .tranding-slide-img img {
+        width: 300px;
+        height: 185px;
+        border-radius: 10px;
+    }
+
+    .tranding-slide__continue-action {
+        top: 70px;
+        left: 75px;
+    }
+
+    .btn-link {
+        height: 40px;
+        width: 75px;
+        gap: 3px;
+    }
+
+    .btn-link img {
+        height: 12px;
+    }
+
+    .btn-link span {
+        font-size: 10px;
+    }
+
+    .suggest-content__title {
+        margin: 10px 0 0 10px;
+    }
+
+    .suggest-content__action {
+        margin: 35px 0 0 10px;
+        gap: 5px;
+    }
+
+    .suggest-content__title p {
+        font-size: 13px;
+    }
+
+    .suggest-img {
+        gap: 5px;
+    }
+
+    .btn-mood span, .btn-somebody span {
+        font-size: 6px;
+        color: #C1C1C1;
+    }
+
+    .btn-mood {
+        border-radius: 5px;
+        height: 30px;
+        width: 50px;
+        gap: 3px
+    }
+
+    .btn-somebody {
+        border-radius: 5px;
+        gap: 3px;
+        height: 35px;
+        width: 90px;
+    }
+
+    .btn-img__before {
+        height: 10px;
+    }
+
+    .btn-img__after {
+        height: 6px;
+    }
+
+    .suggest-img__item1 {
+        height: 85px;
+        background-position: 0 -5px;
+    }
+
+    .suggest-img__item3 {
+        margin-top: 0;
+        height: 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .suggest-img__item2 {
+        height: 70px;
+        background-position: 0 -15px;
+    }
+
+    .suggest-img__item4 {
+        margin-top: 0;
+        width: 100%;
+        height: 65px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .footer {
+        margin-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    .footer__list-link {
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .footer__list-link li a {
+        font-size: 10px;
+    }
+
+    .social img {
+        height: 20px;
+    }
+
+    .btn-footer__detail {
+        width: 130px;
+        height: 45px;
+    }
+
+    .btn-footer__detail img {
+        height: 30px;
+    }
+
+    .footer__detail-title p {
+        font-size: 10px;
+    }
+
+    .footer__detail-title span {
+        font-size: 13px;
+    }
+
+    .footer__nation {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 45%;
+    }
+
+    .footer__nation-address span {
+        font-size: 10px;
+    }
+    .footer__nation-address img{
+        height: 20px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .header__navbar-list {
+        gap: 20px;
+        margin-left: -20px;
+    }
+
+    .navbar-search__slider {
+        margin-top: 30px;
+    }
+
+    .header__navbar-list li a {
+        font-size: 15px;
+    }
+
+    .header__navbar-action {
+        gap: 20px;
+        margin-left: 17%;
+    }
+
+    .btn-language {
+        height: 25px;
+        width: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        border-radius: 5px;
+    }
+
+    .btn-language__img1 {
+        height: 15px;
+    }
+
+    .btn_icon img {
+        height: 15px;
+    }
+
+    .btn-profile img {
+        height: 20px;
+    }
+
+    .header__navbar-action {
+        gap: 5px;
+    }
+
+    .header__navbar-manager {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-left: 7px;
+    }
+
+    .btn-pay {
+        height: 25px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .btn-link {
+        height: 46px;
+        width: 65px;
+        gap: 3px;
+    }
+
+    .tranding-slide__header {
+        width: 180px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .tranding-slide__header .tranding-slide-img img {
+        width: 200px;
+        height: 310px;
+    }
+
+    .tranding-slide__weekly-top {
+        width: 150px;
+        height: 250px;
+        margin: 20px;
+    }
+
+    .weekly-top__count {
+        font-size: 110px;
+        top: 100px;
+        left: 80px;
+    }
+
+    .tranding-slide__weekly-top .tranding-slide-img img {
+        width: 150px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .tranding-slider-control__header .swiper-button-prev {
+        margin-left: 15px;
+    }
+
+    .tranding-slider-control__header .swiper-button-next {
+        margin-right: 15px;
+    }
+
+    .continue-watching__title span,
+    .list-movie__title span,
+    .list-series__title span,
+    .list-cartoon__title span,
+    .weekly-top__title span {
+        font-size: 22px;
+    }
+
+    .tranding-slide__movie {
+        width: 150px;
+        height: 230px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .tranding-slide__movie .tranding-slide-img img {
+        width: 150px;
+        height: 230px;
+        border-radius: 1.5rem;
+    }
+
+    .list-action {
+        margin-top: 20px;
+    }
+
+
+    .continue-watching {
+        margin-top: 40px;
+    }
+
+    .btn-link {
+        height: 40px;
+        width: 75px;
+        gap: 3px;
+    }
+
+    .btn-link img {
+        height: 12px;
+    }
+
+    .btn-link span {
+        font-size: 10px;
+    }
+
+    .suggest-content__action {
+        margin: 80px 0 0 20px;
+        gap: 10px;
+    }
+
+    .suggest-content__title {
+        margin: 20px 0 0 20px;
+    }
+
+    .suggest-content__title p {
+        font-size: 20px;
+    }
+
+    .btn-mood span, .btn-somebody span {
+        font-size: 11px;
+        color: #C1C1C1;
+    }
+
+    .btn-mood {
+        border-radius: 5px;
+        height: 35px;
+        width: 90px;
+        gap: 5px;
+    }
+
+    .btn-somebody {
+        border-radius: 5px;
+        gap: 10px;
+        height: 35px;
+        width: 155px;
+    }
+
+    .btn-img__before {
+        height: 20px;
+    }
+
+    .btn-img__after {
+        height: 6px;
+    }
+
+    .suggest-img__item1 {
+        height: 125px;
+    }
+
+    .suggest-img__item3 {
+        margin-top: 5px;
+        height: 70px;
+    }
+
+    .suggest-img__item2 {
+        height: 100px;
+        background-position: 0 -40px;
+    }
+
+    .suggest-img__item4 {
+        margin-top: 10px;
+        width: 100%;
+        height: 87px;
+    }
+
+    .footer {
+        margin-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    .footer__list-link {
+        gap: 30px;
+    }
+
+    .footer__list-link li a {
+        font-size: 10px;
+    }
+
+    .social img {
+        height: 20px;
+    }
+
+    .btn-footer__detail {
+        width: 130px;
+        height: 45px;
+    }
+
+    .btn-footer__detail img {
+        height: 30px;
+    }
+
+    .footer__detail-title p {
+        font-size: 10px;
+    }
+
+    .footer__detail-title span {
+        font-size: 13px;
+    }
+
+    .footer__nation {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 70%;
+    }
+
+    .footer__nation-address span {
+        font-size: 10px;
+    }
+    .footer__nation-address img{
+        height: 20px;
+    }
+}
+
+/*Pc*/
