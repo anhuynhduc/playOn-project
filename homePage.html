@@ -17,13 +17,6 @@
             <div class="header__navbar">
                 <div class="logo">
                     <img src="./images/icons/iconLogo.svg" alt="logo"/>
-                    <select class="select-language__mobile">
-                        <option value="English">English</option>
-                        <option value="French">French</option>
-                        <option value="Chinese">Chinese</option>
-                        <option value="Japanese">Japanese</option>
-                        <option value="Vietnamese">Vietnamese</option>
-                    </select>
                 </div>
                 <ul class="header__navbar-list">
                     <li><a href="#">Home</a></li>
@@ -32,14 +25,30 @@
                     <li><a href="#">Top</a></li>
                 </ul>
                 <div class="header__navbar-action">
+                    <!--select language-->
+                    <div class="select-menu select-menu__language active">
+                        <div class="select-btn select-btn__language">
+        <span class="sBtn-text sBtn-text__language">
+            <img src="images/icons/iconLanguage.svg" class="btn-language__img1">
+            <img src="images/icons/iconDown-arrow.svg" class="btn-language__img2">
+        </span>
+                        </div>
 
-                    <select class="select-language">
-                        <option value="English">English</option>
-                        <option value="French">French</option>
-                        <option value="Chinese">Chinese</option>
-                        <option value="Japanese">Japanese</option>
-                        <option value="Vietnamese">Vietnamese</option>
-                    </select>
+                        <ul class="options options__language">
+                            <li class="option option__language">
+                                <span class="option-text option-text__language">English</span>
+                            </li>
+                            <li class="option option__language">
+                                <span class=" option-text option-text__language">French</span>
+                            </li>
+                            <li class="option option__language">
+                                <span class="option-text option-text__language">Chinese</span>
+                            </li>
+                            <li class="option option__language">
+                                <span class="option-text option-text__language">Vietnamese</span>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div class="header__navbar-search">
                         <button class="btn_icon btn-search">
@@ -55,15 +64,41 @@
                 </div>
                 <div class="header__navbar-manager">
                     <button class="btn-pay">Buy for 50$</button>
-                    <button class=" btn_icon btn-notification">
-                        <img src="./images/icons/iconNotification.svg" alt="notification"/>
-                    </button>
-                    <button class="btn_icon btn-profile">
-                        <img src="./images/icons/iconUser-profile.svg" alt="user-profile"/>
-                    </button>
-                    <button class="btn-list">
-                        <img src="./images/icons/iconList.png" alt="list"/>
-                    </button>
+                    <div class="notification">
+                        <button class=" btn_icon btn-notification">
+                            <img src="./images/icons/iconNotification.svg" alt="notification"/>
+                        </button>
+                        <div class="list-notification">
+                            <a>
+                                <img src="images/continue-watching/continue1.svg" alt=""/>
+                                <span>Soul 2020</span>
+                            </a>
+                            <a>
+                                <img src="images/continue-watching/continue1.svg" alt=""/>
+                                <span>The Wolf of all street</span>
+                            </a>
+                            <a>
+                                <img src="images/continue-watching/continue3.svg" alt=""/>
+                                <span>Elite 2018,season 2</span>
+                            </a>
+                            <a>
+                                <img src="images/continue-watching/continue4.svg" alt=""/>
+                                <span>Euphoria 2019</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <button class="btn_icon btn-profile">
+                            <img src="./images/icons/iconUser-profile.svg" alt="user-profile"/>
+                        </button>
+                        <div class="list-profile">
+                            <a>Profile</a>
+                            <a>Settings</a>
+                            <a>Help</a>
+                            <a>Change Password</a>
+                            <a>Logout</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <nav class="navbar">
@@ -179,40 +214,38 @@
         </header>
         <div class="container">
             <div class="list-action">
-                <a href="#">
-                    <button class="btn-link">
-                        <img src="./images/icons/iconMyMovies.svg" alt=""/>
-                        <span>Movies</span>
-                    </button>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconMyMovies.svg" alt=""/>
+                    <span>Movies</span>
                 </a>
-                <button class="btn-link">
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconVideo-player.svg" alt=""/>
                     <span>Series</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconCinema.svg" alt=""/>
                     <span>Cartoons</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconMovies.svg" alt=""/>
                     <span>Top</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconDownload.svg" alt=""/>
                     <span>Download</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconWatch-movie.svg" alt=""/>
                     <span>New</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconHeart.svg" alt=""/>
                     <span>Like</span>
-                </button>
-                <button class="btn-link">
+                </a>
+                <a href="#" class="btn-link">
                     <img src="./images/icons/iconBookmark.svg" alt=""/>
                     <span>Looked</span>
-                </button>
+                </a>
             </div>
             <div class="list-action__mobile">
                 <div class="swiper tranding-slider">
@@ -395,37 +428,197 @@
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie1.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                        <div class="desc-movie">
+                                            <p class="name-movie">Me Before You</p>
+                                            <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                                3/6/2016
+                                            </p>
+                                            <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                                Thea Sharrock
+                                            </p>
+                                            <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                                7.5/10
+                                            </p>
+                                        </div>
+                                        <button class="btn__watch-now">
+                                            <img src="images/icons/iconPlay.svg"/>
+                                            <p>Watch Now</p>
+                                        </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie2.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Fantastic Beasts</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            18/11/2016
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            David Yates
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            6.5/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie3.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Thor: Love and Thunder</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            6/7/2022
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Taika Waititi
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            6.5/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie4.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Free Guy</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            13/8/2021
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Shawn Levy
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            6.2/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie5.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Avatar</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            18/12/2009
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            James Cameron
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.8/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/movies/movie6.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Robin Hood</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            21/11/2018
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Otto Bathurst
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.8/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         <div class="tranding-slider-control__continue">
-                            <div class="swiper-button-prev slider-arrow">
-                            </div>
                             <div class="swiper-button-next slider-arrow">
                             </div>
                         </div>
@@ -487,16 +680,62 @@
                         <p>see in the evening</p>
                     </div>
                     <div class="suggest-content__action">
-                        <button class="btn-mood">
-                            <img src="./images/icons/iconThinking.svg" alt="" class="btn-img__before"/>
-                            <span>Mood</span>
-                            <img src="./images/icons/iconDown.svg" alt="" class="btn-img__after"/>
-                        </button>
-                        <button class="btn-somebody">
-                            <img src="./images/icons/iconFriends.svg" alt="" class="btn-img__before"/>
-                            <span>With somebody</span>
-                            <img src="./images/icons/iconDown.svg" alt="" class="btn-img__after"/>
-                        </button>
+                        <!--select mood-->
+                        <div class="select-menu select-menu__mood active">
+                            <div class="select-btn select-btn__mood">
+        <span class="sBtn-text sBtn-text__mood">
+            <img src="./images/icons/iconThinking.svg" alt="" class="btn-img__before"/>
+            <p>Mood</p>
+            <img src="./images/icons/iconDown.svg" alt="" class="btn-img__after"/>
+        </span>
+                            </div>
+
+                            <ul class="options options__mood">
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Happy</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class=" option-text option-text__mood">Proud</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Worried</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Sad</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Fearful</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Excited</span>
+                                </li>
+                                <li class="option option__mood">
+                                    <span class="option-text option-text__mood">Disappointed</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--select mood-->
+                        <div class="select-menu select-menu__somebody active">
+                            <div class="select-btn select-btn__somebody">
+        <span class="sBtn-text sBtn-text__somebody">
+            <img src="./images/icons/iconFriends.svg" alt="" class="btn-img__before"/>
+            <p> With Somebody</p>
+            <img src="./images/icons/iconDown.svg" alt="" class="btn-img__after"/>
+        </span>
+                            </div>
+
+                            <ul class="options options__somebody">
+                                <li class="option option__somebody">
+                                    <span class="option-text option-text__somebody">Friends</span>
+                                </li>
+                                <li class="option option__somebody">
+                                    <span class=" option-text option-text__somebody">Love</span>
+                                </li>
+                                <li class="option option__somebody">
+                                    <span class="option-text option-text__somebody">Family</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="suggest-img">
@@ -678,13 +917,30 @@
                 </button>
             </div>
             <div class="footer__nation">
-                <select class="select-language">
-                    <option value="English">English</option>
-                    <option value="French">French</option>
-                    <option value="Chinese">Chinese</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Vietnamese">Vietnamese</option>
-                </select>
+                <!--select language footer-->
+                <div class="select-menu select-menu__language-footer active">
+                    <div class="select-btn select-btn__language-footer">
+        <span class="sBtn-text sBtn-text__language-footer">
+            <img src="images/icons/iconLanguage.svg" class="btn-language__img1">
+            <img src="images/icons/iconDown-arrow.svg" class="btn-language__img2">
+        </span>
+                    </div>
+
+                    <ul class="options options__language-footer">
+                        <li class="option option__language-footer">
+                            <span class="option-text option-text__language-footer">English</span>
+                        </li>
+                        <li class="option option__language-footer">
+                            <span class=" option-text option-text__language-footer">French</span>
+                        </li>
+                        <li class="option option__language-footer">
+                            <span class="option-text option-text__language-footer">Chinese</span>
+                        </li>
+                        <li class="option option__language-footer">
+                            <span class="option-text option-text__language-footer">Vietnamese</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="footer__nation-address">
                     <img src="./images/icons/iconLogo.svg" alt=""/>
                     <span>Los-Angeles</span>
