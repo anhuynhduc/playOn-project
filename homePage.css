@@ -99,7 +99,7 @@ body{
     z-index: 5;
     left: -80px;
     top: 40px;
-    animation: fadeIn ease-in 0.5s;
+    animation: fadeInUpLanguage ease-in 0.5s;
 }
 .list-notification a{
     display: flex;
@@ -134,7 +134,7 @@ body{
     z-index: 5;
     left: -80px;
     top: 40px;
-    animation: fadeIn ease-in 0.5s;
+    animation: fadeInUpLanguage ease-in 0.5s;
 }
 .list-profile a{
     text-decoration: none;
@@ -764,10 +764,8 @@ body{
     margin-top: 50px;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
-    gap: 70%;
-    margin-left: 2%;
 }
 .footer__nation-address{
     display: flex;
@@ -797,6 +795,7 @@ body{
 }
 
 /* CSS của select menu language */
+
 .select-menu__language {
     position: relative;
     display: inline-block;

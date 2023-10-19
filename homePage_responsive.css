@@ -275,8 +275,8 @@
     }
 
     .list-action__mobile {
-        width: 65%;
-        margin-left: 17.5%;
+        width: 95%;
+        margin-left: 2.5%;
         display: flex;
         overflow: hidden;
         overflow-x: scroll;
