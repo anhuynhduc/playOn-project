@@ -23,13 +23,13 @@ body{
     margin-top: 10px;
     width: 150px;
 }
+
 .header__navbar-list{
     display:flex;
     align-items: center;
     justify-content: left;
     gap: 30px;
     padding-right: 300px;
-
 }
 .header__navbar-list li{
     list-style-type: none;
@@ -171,6 +171,8 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    margin-top: -35px;
 }
 .btn-list img{
     height: 35px;
