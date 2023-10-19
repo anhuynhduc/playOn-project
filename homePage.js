@@ -19,8 +19,8 @@ btnSearch.addEventListener('click',()=>{
     let btnList = document.querySelector('.btn-list')
     btnList.style.display = "none"
 
-    let selectLanguage = document.querySelector('.select-menu__language')
-    selectLanguage.style.left = "-100px"
+    // let selectLanguage = document.querySelector('.select-menu__language')
+    // selectLanguage.style.left = "-100px"
 
     let searchCategory = document.querySelector('.navbar-search__category')
     searchCategory.style.display = "block"
