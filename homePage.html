@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>PlayOn</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +27,11 @@
                 </ul>
                 <div class="header__navbar-action">
                     <!--select language-->
-                    <div class="select-menu select-menu__language active">
-                        <div class="select-btn select-btn__language">
+                    <div class="select-menu select-menu__language">
+                        <div class="select-btn select-btn__language" id="toggleOptions">
         <span class="sBtn-text sBtn-text__language">
             <img src="images/icons/iconLanguage.svg" class="btn-language__img1">
+            <span id="selectedLanguage"></span> <!-- Thêm một phần tử span để hiển thị ngôn ngữ đã chọn -->
             <img src="images/icons/iconDown-arrow.svg" class="btn-language__img2">
         </span>
                         </div>
@@ -39,7 +41,7 @@
                                 <span class="option-text option-text__language">English</span>
                             </li>
                             <li class="option option__language">
-                                <span class=" option-text option-text__language">French</span>
+                                <span class="option-text option-text__language">French</span>
                             </li>
                             <li class="option option__language">
                                 <span class="option-text option-text__language">Chinese</span>
@@ -98,6 +100,9 @@
                             <a>Change Password</a>
                             <a>Logout</a>
                         </div>
+                        <button class="btn_icon btn-list">
+                            <img src="./images/icons/iconList.png" alt="user-profile"/>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -248,95 +253,40 @@
                 </a>
             </div>
             <div class="list-action__mobile">
-                <div class="swiper tranding-slider">
-                    <div class="swiper-wrapper">
-                        <!-- Slide-start -->
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconMyMovies.svg" alt=""/>
-                                    <span>Movies</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconVideo-player.svg" alt=""/>
-                                    <span>Series</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconCinema.svg" alt=""/>
-                                    <span>Cartoons</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconMovies.svg" alt=""/>
-                                    <span>Top</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconDownload.svg" alt=""/>
-                                    <span>Download</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconWatch-movie.svg" alt=""/>
-                                    <span>New</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconHeart.svg" alt=""/>
-                                    <span>Like</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <button class="btn-link">
-                                    <img src="./images/icons/iconBookmark.svg" alt=""/>
-                                    <span>Looked</span>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconMyMovies.svg" alt=""/>
+                    <span>Movies</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconVideo-player.svg" alt=""/>
+                    <span>Series</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconCinema.svg" alt=""/>
+                    <span>Cartoons</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconMovies.svg" alt=""/>
+                    <span>Top</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconDownload.svg" alt=""/>
+                    <span>Download</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconWatch-movie.svg" alt=""/>
+                    <span>New</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconHeart.svg" alt=""/>
+                    <span>Like</span>
+                </a>
+                <a href="#" class="btn-link">
+                    <img src="./images/icons/iconBookmark.svg" alt=""/>
+                    <span>Looked</span>
+                </a>
             </div>
-            <div class="continue-watching">
+            <div class="continue-watching" >
                 <div class="continue-watching__title">
                     <span>Continue watching</span>
                 </div>
@@ -353,6 +303,14 @@
                                     <video controls>
                                         <source src="videos/soul.mp4" type="video/mp4">
                                     </video>
+                                    <div class="popup" id="popup">
+                                        <div class="popup-content">
+                                            <span class="close" id="close"><i class="fa fa-close"></i></span>
+                                            <video controls>
+                                                <source src="videos/soul.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__continue">
@@ -417,7 +375,7 @@
                     </div>
                 </div>
             </div>
-            <div class="list-movie">
+            <div class="list-movie" >
                 <div class="list-movie__title">
                     <span>Movies</span>
                 </div>
@@ -619,13 +577,15 @@
                         </div>
 
                         <div class="tranding-slider-control__continue">
+                            <div class="swiper-button-prev slider-arrow">
+                            </div>
                             <div class="swiper-button-next slider-arrow">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="list-series">
+            <div class="list-series" >
                 <div class="list-series__title">
                     <span>Series</span>
                 </div>
@@ -636,44 +596,205 @@
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie1.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Ginny & Georgia</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            24/2/2021
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Sarah Lampert
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.0/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie2.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">You</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            9/9/2018
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Greg Berlanti
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.0/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie3.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Wednesday</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            23/11/2022
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Tim Burton
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.5/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie4.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Stranger Things</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            15/7/2016
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            The Duffer Brothers
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.0/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie5.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Ratched</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            18/9/2020
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Evan Romansky
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.5/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/series/serie6.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Dawn of the Seven</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            26/7/2019
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Seth Rogen
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.7/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         <div class="tranding-slider-control__continue">
-                            <div class="swiper-button-prev slider-arrow">
-                            </div>
+                            <div class="swiper-button-prev slider-arrow"></div>
                             <div class="swiper-button-next slider-arrow">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="suggest">
+            <div class="suggest" >
                 <div class="suggest-content">
                     <div class="suggest-content__title">
                         <p>Suggest what to</p>
@@ -757,7 +878,7 @@
                     </div>
                 </div>
             </div>
-            <div class="list-cartoon">
+            <div class="list-cartoon" >
                 <div class="list-cartoon__title">
                     <span>Cartoons</span>
                 </div>
@@ -768,30 +889,192 @@
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon1.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Home</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            27/3/2015
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Tim Johnson
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            6.4/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon2.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Zootopia</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            17/2/2016
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Rich Moore
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.8/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon3.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Tangled</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            24/11/2010
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Nathan Greno
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            8.2/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon4.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Brave</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            10/6/2012
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Brenda Chapman
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.1/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon5.svg" alt="Tranding">
                                 </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Sing 2</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            22/12/2021
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Garth Jennings
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.6/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="swiper-slide tranding-slide__movie">
                                 <div class="tranding-slide-img">
                                     <img src="images/cartoons/cartoon6.svg" alt="Tranding">
+                                </div>
+                                <div class="show-movie">
+                                    <div class="desc-movie">
+                                        <p class="name-movie">Luca</p>
+                                        <p class="year-movie">
+                                                <span>
+                                                    Years:
+                                                </span>
+                                            18/6/2021
+                                        </p>
+                                        <p class="director-movie">
+                                                <span>
+                                                    Director:
+                                                </span>
+                                            Enrico Casarosa
+                                        </p>
+                                        <p class="point-movie">
+                                                <span>
+                                                    Point:
+                                                </span>
+                                            7.3/10
+                                        </p>
+                                    </div>
+                                    <button class="btn__watch-now">
+                                        <img src="images/icons/iconPlay.svg"/>
+                                        <p>Watch Now</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -805,7 +1088,7 @@
                     </div>
                 </div>
             </div>
-            <div class="weekly-top">
+            <div class="weekly-top" >
                 <div class="weekly-top__title">
                     <span>Weekly Top</span>
                 </div>
@@ -918,26 +1201,27 @@
             </div>
             <div class="footer__nation">
                 <!--select language footer-->
-                <div class="select-menu select-menu__language-footer active">
-                    <div class="select-btn select-btn__language-footer">
-        <span class="sBtn-text sBtn-text__language-footer">
+                <div class="select-menu select-menu__language_footer">
+                    <div class="select-btn select-btn__language_footer" id="toggleOptions_footer">
+        <span class="sBtn-text sBtn-text__language_footer">
             <img src="images/icons/iconLanguage.svg" class="btn-language__img1">
+            <span id="selectedLanguage_footer"></span> <!-- Thêm một phần tử span để hiển thị ngôn ngữ đã chọn -->
             <img src="images/icons/iconDown-arrow.svg" class="btn-language__img2">
         </span>
                     </div>
 
-                    <ul class="options options__language-footer">
-                        <li class="option option__language-footer">
-                            <span class="option-text option-text__language-footer">English</span>
+                    <ul class="options options__language_footer">
+                        <li class="option option__language_footer">
+                            <span class="option-text option-text__language_footer">English</span>
                         </li>
-                        <li class="option option__language-footer">
-                            <span class=" option-text option-text__language-footer">French</span>
+                        <li class="option option__language_footer">
+                            <span class="option-text option-text__language_footer">French</span>
                         </li>
-                        <li class="option option__language-footer">
-                            <span class="option-text option-text__language-footer">Chinese</span>
+                        <li class="option option__language_footer">
+                            <span class="option-text option-text__language_footer">Chinese</span>
                         </li>
-                        <li class="option option__language-footer">
-                            <span class="option-text option-text__language-footer">Vietnamese</span>
+                        <li class="option option__language_footer">
+                            <span class="option-text option-text__language_footer">Vietnamese</span>
                         </li>
                     </ul>
                 </div>
@@ -953,6 +1237,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 <script src="homePage.js" type="text/javascript"></script>
 </body>
 </html>

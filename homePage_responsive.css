@@ -3,31 +3,64 @@
     .logo img {
         width: 80px;
     }
-
-    .header__navbar-action .btn-language{
-        display: none;
+    .logo{
+        padding-right: 100px;
     }
+
     .header__navbar-list {
        display: none;
     }
-    /*.logo .btn-language{*/
-    /*    display: flex;*/
-    /*    height: 35px;*/
-    /*}*/
-
-    .select-language__mobile{
-        display: block;
+    .header__navbar-search{
+        gap: 0;
     }
-    .select-language{
-        display: none;
+    .list-search__img img {
+        width: 30px;
+    }
+    .list-search__actor-item {
+        gap: 10px;
+        margin-top: 18px;
+    }
+    .actor-item {
+        width: 90px;
+    }
+    .actor-item a {
+        display: flex;
+        gap: 3px;
+        font-size: 9px;
     }
 
-    .logo .btn-language img{
-       margin-top: 0;
+    .profile{
+        position: relative;
     }
 
+    .list-profile {
+        width: 120px;
+        left: -135px;
+        top: 60px;
+    }
+    .list-profile a {
+        font-size: 13px;
+    }
+    .list-search__banner img {
+        width: 30px;
+    }
+    .list-search__img {
+        gap: 10px;
+    }
+    .list-search__banner {
+        margin: -85px 0 0 -15px;
+    }
+    .list-search__actor h3 {
+        font-size: 13px;
+    }
+    .navbar-search__category-title span {
+        font-size: 13px;
+    }
+    .navbar-search__category {
+        margin-top: 40px;
+    }
     .navbar-search__slider {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .header__navbar-list li a {
@@ -36,40 +69,80 @@
 
     .header__navbar-action {
         gap: 20px;
-        margin-left: 20%;
+        margin-left: 20px;
+        position: relative;
     }
-
-    .btn-language {
-        height: 25px;
-        width: 57px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3px;
-        border-radius: 5px;
+    .btn_icon, .btn-pay{
+        margin-top: 25px;
     }
-
-    .btn-language__img1 {
-        height: 15px;
+    .btn-pay{
+        width: 85px;
     }
-
     .btn_icon img {
         height: 15px;
+    }
+    .notification{
+        display: none;
+    }
+
+    .select-menu__language {
+        position: absolute;
+        display: inline-block;
+        top: 50px;
+        left: -200px;
+    }
+    .option-text__language {
+        font-size: 13px;
+        color: #ACACAC;
+    }
+    .options__language{
+        width: 115px;
+    }
+    .sBtn-text__language {
+        font-size: 11px;
+    }
+    .select-btn__language {
+        border-radius: 5px;
+        height: 25px;
+    }
+    .btn-language__img1 {
+        height: 17px;
+    }
+    .btn-language__img2 {
+        height: 10px;
     }
 
     .btn-profile img {
         height: 20px;
     }
     .btn-list{
-        display: flex;
         position: absolute;
-        top: 100%;
-        left: 125px;
+        display: flex;
+        top: 30px;
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-list img{
+        height: 25px;
     }
 
     .header__navbar-action {
         margin-top: -20px;
         gap: 5px;
+    }
+    .show-input input {
+        margin-top: 23px;
+        width: 50px;
+        height: 25px;
+        font-size: 11px;
+        color: #ffffff;
+    }
+    .show-input{
+        padding-right: 0;
+        height: 20px;
+        border: none;
     }
 
     .header__navbar-manager {
@@ -135,7 +208,7 @@
     .list-series__title span,
     .list-cartoon__title span,
     .weekly-top__title span {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .tranding-slide__movie {
@@ -150,22 +223,72 @@
         height: 150px;
         border-radius: 1rem;
     }
-    .list-action__mobile{
-        display: block;
+
+    .show-movie {
+        top: 25px;
+        left: 7px;
+        height: 100px;
+        width: 85px;
+    }
+
+    .btn__watch-now {
+        top: 75px;
+        left: 8px;
+        height: 20px;
+        width: 70px;
+    }
+    .btn__watch-now p {
+        font-size: 6px;
+    }
+
+    .name-movie {
+        width: 45px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .year-movie span, .director-movie span, .point-movie span {
+        font-size: 7px;
+    }
+    .year-movie{
+        top: 20px;
+    }
+    .director-movie{
+        top: 30px;
+    }
+    .point-movie{
+        top: 40px;
+    }
+    .year-movie , .director-movie , .point-movie  {
+        font-size: 5px;
+    }
+
+    .list-action__mobile {
+        width: 65%;
+        margin-left: 17.5%;
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
     }
 
     .list-action {
         display: none;
     }
 
-    .continue-watching {
+    .continue-watching ,.list-movie, .list-series, .suggest, .list-cartoon, .banner-footer{
         margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .tranding-slide__continue {
         width: 300px;
         height: 185px;
         border-radius: 20px;
+    }
+    .weekly-top__slider {
+        margin-top: 25px;
     }
 
     .tranding-slide__continue .tranding-slide-img img {
@@ -198,7 +321,7 @@
     }
 
     .suggest-content__action {
-        margin: 35px 0 0 10px;
+        margin: 50px 0 0 10px;
         gap: 5px;
     }
 
@@ -215,19 +338,40 @@
         color: #C1C1C1;
     }
 
-    .btn-mood {
-        border-radius: 5px;
-        height: 30px;
-        width: 50px;
-        gap: 3px
+    .select-btn__mood span, .select-btn__somebody span {
+        gap: 5px;
     }
 
-    .btn-somebody {
+    .select-menu__mood .select-btn__mood, .select-menu__somebody .select-btn__somebody {
         border-radius: 5px;
-        gap: 3px;
-        height: 35px;
-        width: 90px;
+        height: 25px;
+        width: auto;
+        padding: 2px 5px 2px 5px;
+        font-size: 8px;
     }
+    .select-menu__mood .options__mood .option__mood .option-text__mood {
+        font-size: 13px;
+    }
+    .select-menu__somebody .options__somebody .option__somebody .option-text__somebody {
+        font-size: 13px;
+        color: #ACACAC;
+    }
+    .select-menu__mood .options__mood {
+        width: 120px;
+    }
+
+    .select-menu__somebody .options__somebody {
+        width: 85px;
+    }
+
+    .btn-mood span, .btn-somebody span {
+        font-size: 11px;
+        color: #C1C1C1;
+    }
+    .select-menu__mood .options__mood .option__mood, .select-menu__somebody .options__somebody .option__somebody{
+        height: 35px;
+    }
+
 
     .btn-img__before {
         height: 10px;
@@ -303,7 +447,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        gap: 30%;
+        gap: 22%;
     }
     .footer__nation .select-language{
         display: block;
@@ -315,6 +459,35 @@
     .footer__nation-address img{
         height: 20px;
     }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: 15px;
+        text-transform: none!important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+    }
+    .tranding-slider-control__header .slider-arrow {
+        width: 35px;
+        height: 45px;
+        border-radius: 5px;
+    }
+    .tranding-slider-control__continue .slider-arrow {
+        width: 30px;
+        height: 35px;
+    }
+    .select-btn__language_footer {
+        font-size: 13px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .option-text__language_footer {
+        font-size: 13px;
+    }
+    .options__language_footer {
+        width: 110px;
+    }
+
 }
 
 /*Tablet*/
@@ -325,7 +498,7 @@
 
     .header__navbar-list {
         gap: 20px;
-        margin-left: -20px;
+        padding-right: 0;
     }
 
     .navbar-search__slider {
@@ -338,24 +511,43 @@
 
     .header__navbar-action {
         gap: 20px;
-        margin-left: 15%;
     }
-
-    .btn-language {
-        height: 25px;
-        width: 57px;
+    .show-input input{
+        width: 200px;
+    }
+    .list-search__banner {
+        margin: -130px 0 0 0;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 3px;
+        justify-content: left;
+        gap: 2px;
+        grid-area: banner;
+    }
+    .list-search__banner img {
+        width: 75px;
+    }
+    .list-search__img {
+        gap: 10px;
+    }
+    .option-text__language {
+        font-size: 13px;
+        color: #ACACAC;
+    }
+    .options__language{
+        width: 115px;
+    }
+    .sBtn-text__language {
+        font-size: 11px;
+    }
+    .select-btn__language {
         border-radius: 5px;
+        height: 25px;
     }
     .btn-language__img1 {
-        height: 15px;
+        height: 17px;
     }
-
-    .btn_icon img {
-        height: 15px;
+    .btn-language__img2 {
+        height: 10px;
     }
 
     .btn-profile img {
@@ -364,6 +556,9 @@
 
     .header__navbar-action {
         gap: 5px;
+    }
+    .header__navbar-search {
+        gap: 0;
     }
 
     .header__navbar-manager {
@@ -383,6 +578,16 @@
         height: 46px;
         padding: 10px;
         gap: 3px;
+    }
+    .list-notification {
+        left: -170px;
+    }
+    .list-profile {
+        width: 120px;
+        left: -135px;
+    }
+    .list-profile a {
+        font-size: 13px;
     }
 
     .tranding-slide__header {
@@ -406,6 +611,30 @@
         font-size: 110px;
         top: 100px;
         left: 80px;
+    }
+
+    .show-movie {
+        top: 45px;
+        left: 12px;
+        height: 150px;
+        width: 125px;
+    }
+
+    .btn__watch-now {
+        top: 110px;
+        left: 20px;
+        height: 30px;
+        width: 85px;
+    }
+    .btn__watch-now p {
+        font-size: 8px;
+    }
+
+    .name-movie {
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .tranding-slide__weekly-top .tranding-slide-img img {
@@ -443,8 +672,16 @@
         border-radius: 1.5rem;
     }
 
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 25px;
+    }
+
     .list-action {
         margin-top: 20px;
+        gap: 5px;
+    }
+    .btn-link span {
+        font-size: 12px;
     }
 
 
@@ -455,15 +692,11 @@
     .btn-link {
         height: 40px;
         width: 75px;
-        gap: 3px;
+        gap: 5px;
     }
 
     .btn-link img {
-        height: 12px;
-    }
-
-    .btn-link span {
-        font-size: 10px;
+        height: 15px;
     }
 
     .suggest-content__action {
@@ -479,24 +712,40 @@
         font-size: 20px;
     }
 
+    .select-btn__mood span, .select-btn__somebody span {
+        gap: 5px;
+    }
+
+    .select-menu__mood .select-btn__mood, .select-menu__somebody .select-btn__somebody {
+        border-radius: 5px;
+        height: 25px;
+        width: auto;
+        padding: 5px 10px 5px 10px;
+        font-size: 13px;
+    }
+    .select-menu__mood .options__mood .option__mood .option-text__mood {
+        font-size: 13px;
+    }
+    .select-menu__somebody .options__somebody .option__somebody .option-text__somebody {
+        font-size: 13px;
+        color: #ACACAC;
+    }
+    .select-menu__mood .options__mood {
+        width: 130px;
+    }
+
+    .select-menu__somebody .options__somebody {
+        width: 145px;
+    }
+
     .btn-mood span, .btn-somebody span {
         font-size: 11px;
         color: #C1C1C1;
     }
-
-    .btn-mood {
-        border-radius: 5px;
-        height: 35px;
-        width: 90px;
-        gap: 5px;
+    .select-menu__mood .options__mood .option__mood, .select-menu__somebody .options__somebody .option__somebody{
+        height: 40px;
     }
 
-    .btn-somebody {
-        border-radius: 5px;
-        gap: 10px;
-        height: 35px;
-        width: 155px;
-    }
 
     .btn-img__before {
         height: 20px;
@@ -565,7 +814,16 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        gap: 65%;
+        gap: 55%;
+    }
+    .select-btn__language_footer {
+        font-size: 13px;
+    }
+    .option-text__language_footer {
+         font-size: 13px;
+    }
+    .options__language_footer {
+        width: 110px;
     }
 
     .footer__nation-address span {

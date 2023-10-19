@@ -1,3 +1,6 @@
+
+
+
 let btnSearch = document.querySelector('.btn-search')
 btnSearch.addEventListener('click',()=>{
 
@@ -9,6 +12,15 @@ btnSearch.addEventListener('click',()=>{
         display: 'flex',
         alignItems: 'center'
     })
+
+    let logo = document.querySelector('.logo')
+    logo.style.padding = "0px"
+
+    let btnList = document.querySelector('.btn-list')
+    btnList.style.display = "none"
+
+    let selectLanguage = document.querySelector('.select-menu__language')
+    selectLanguage.style.left = "-100px"
 
     let searchCategory = document.querySelector('.navbar-search__category')
     searchCategory.style.display = "block"
@@ -141,23 +153,22 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 });
 
 // select language
-const optionMenu__language = document.querySelector(".select-menu__language"),
-    selectBtn__language = optionMenu__language.querySelector(".select-btn__language"),
-    options__language = optionMenu__language.querySelectorAll(".option__language"),
-    sBtn_text__language = optionMenu__language.querySelector(".sBtn-text__language");
+const toggleOptions = document.getElementById("toggleOptions");
+const optionMenu__language = document.querySelector(".select-menu__language");
+const options__language = optionMenu__language.querySelector(".options__language");
 
-optionMenu__language.classList.toggle("active")
+toggleOptions.addEventListener("click", () => {
+    options__language.style.display = options__language.style.display === "block" ? "none" : "block";
+});
 
-selectBtn__language.addEventListener("click", () =>
-    optionMenu__language.classList.toggle("active")
-);
+const options__language_items = optionMenu__language.querySelectorAll(".option__language");
+const selectedLanguage = document.getElementById("selectedLanguage");
 
-options__language.forEach((option) => {
+options__language_items.forEach((option) => {
     option.addEventListener("click", () => {
         let selectedOption = option.querySelector(".option-text__language").innerText;
-        sBtn_text__language.innerText = selectedOption;
-
-        optionMenu__language.classList.remove("active");
+        selectedLanguage.innerText = selectedOption; // Cập nhật nội dung ngôn ngữ đã chọn vào selectedLanguage
+        options__language.style.display = "none";
     });
 });
 
@@ -234,23 +245,27 @@ btnNotification.addEventListener('click',()=>{
 })
 
 // select language footer
-const optionMenu__language_footer = document.querySelector(".select-menu__language-footer"),
-    selectBtn__language_footer = optionMenu__language_footer.querySelector(".select-btn__language-footer"),
-    options__language_footer = optionMenu__language_footer.querySelectorAll(".option__language-footer"),
-    sBtn_text__language_footer = optionMenu__language_footer.querySelector(".sBtn-text__language-footer");
+const toggleOptions_footer = document.getElementById("toggleOptions_footer");
+const optionMenu__language_footer = document.querySelector(".select-menu__language_footer");
+const options__language_footer = optionMenu__language_footer.querySelector(".options__language_footer");
 
-optionMenu__language_footer.classList.toggle("active")
+toggleOptions_footer.addEventListener("click", () => {
+    options__language_footer.style.display = options__language_footer.style.display === "block" ? "none" : "block";
+});
 
-selectBtn__language_footer.addEventListener("click", () =>
-    optionMenu__language_footer.classList.toggle("active")
-);
+const options__language_items_footer= optionMenu__language_footer.querySelectorAll(".option__language_footer");
+const selectedLanguage_footer = document.getElementById("selectedLanguage_footer");
 
-options__language_footer.forEach((option) => {
+options__language_items_footer.forEach((option) => {
     option.addEventListener("click", () => {
-        let selectedOption = option.querySelector(".option-text__language-footer").innerText;
-        sBtn_text__language_footer.innerText = selectedOption;
-
-        optionMenu__language_footer.classList.remove("active");
+        let selectedOption = option.querySelector(".option-text__language_footer").innerText;
+        selectedLanguage_footer.innerText = selectedOption; // Cập nhật nội dung ngôn ngữ đã chọn vào selectedLanguage
+        options__language_footer.style.display = "none";
     });
 });
+// AOS loading
+AOS.init({
+    duration: 500,
+})
+
 
