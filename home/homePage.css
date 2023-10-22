@@ -593,7 +593,7 @@ body{
     height: 300px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-image: url("images/suggests/suggest1.svg");
+    background-image: url("/images/suggests/suggest1.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 -55px;
@@ -603,7 +603,7 @@ body{
     height: 250px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-image: url("images/suggests/suggest2.svg");
+    background-image: url("/images/suggests/suggest2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 -60px;
@@ -614,7 +614,7 @@ body{
     height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-image: url("images/suggests/suggest3.svg");
+    background-image: url("/images/suggests/suggest3.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -624,7 +624,7 @@ body{
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-image: url("images/suggests/suggest4.svg");
+    background-image: url("/images/suggests/suggest4.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
